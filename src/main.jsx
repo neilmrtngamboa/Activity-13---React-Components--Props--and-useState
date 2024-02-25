@@ -1,10 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import Title from './Header.jsx'
+import Copyright from './Footer.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.querySelector('#header')).render(
   <React.StrictMode>
-    <App />
+    <Title />
+  </React.StrictMode>,
+)
+
+ReactDOM.createRoot(document.querySelector('#footer')).render(
+  <React.StrictMode>
+    <Copyright />
   </React.StrictMode>,
 )
