@@ -17,7 +17,7 @@ function Counter() {
 
     return (
         <>
-        <h1>{counter}</h1>
+        <h1>{count}</h1>
         <div className='d-grid gap-2'>
             <button className='btn btn-outline-dark' onClick={Increment}>➕Add 1</button>
             <button className='btn btn-outline-dark' onClick={Decrement}>➖Subtract 1</button>
