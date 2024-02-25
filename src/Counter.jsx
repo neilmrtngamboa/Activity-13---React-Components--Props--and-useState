@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { useState } from 'react';
+import CountDisplay from './CountDisplay';
 
 
 
@@ -17,9 +18,9 @@ function Counter() {
 
     return (
         <>
+        <CountDisplay count = {count} setCount={setCount}
         
-        {count <= 5 ? (<h1><span className="badge bg-dark rounded-pill ms-5 text-danger">{count}</span></h1>):(<h1><span className="badge bg-primary rounded-pill ms-5 text-light">{count}</span></h1>)
-        }
+        />
         <div className='d-grid gap-2'>
             <button className='btn btn-outline-dark' onClick={Increment}>➕Add 1</button>
             <button className='btn btn-outline-dark' onClick={Decrement}>➖Subtract 1</button>
